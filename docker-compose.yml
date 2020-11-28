@@ -1,0 +1,16 @@
+services:
+  mongodb:
+    image: mongo:latest
+    hostname: mongodb
+    volumes: 
+      - /data/db/mongo
+    ports: 
+      - "27017:27017"
+    command: ["-f", "/etc/mongod.conf"]
+
+  redis: 
+    image: "redis:alpine"
+    volumes:
+      - /data/db/redis
+    ports: 
+      - "6379:6379"
