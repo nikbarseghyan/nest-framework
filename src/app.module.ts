@@ -3,6 +3,7 @@ import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
+import { TokenModule } from './token/token.module';
 
 const env = process.env.NODE_ENV || 'development';
 @Module({
@@ -19,6 +20,8 @@ const env = process.env.NODE_ENV || 'development';
       useNewUrlParser: true,
       useUnifiebTopology: true,
     }),
+
+    TokenModule,
   ],
   controllers: [],
   providers: [],
