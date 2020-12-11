@@ -30,18 +30,22 @@
     "@nestjs/mongoose": "^7.1.2",
     "@nestjs/passport": "^7.1.5",
     "@nestjs/platform-express": "^7.5.1",
+    "@nestjs/swagger": "^4.7.5",
+    "@types/mailgun-js": "^0.22.11",
     "@types/mongoose": "^5.10.1",
     "bcrypt": "^5.0.0",
     "class-transformer": "^0.3.1",
     "class-validator": "^0.12.2",
     "lodash": "^4.17.20",
+    "mailgun-js": "^0.22.0",
     "moment": "^2.29.1",
     "mongoose": "^5.10.17",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.6.3"
+    "rxjs": "^6.6.3",
+    "swagger-ui-express": "^4.1.5"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.5.1",
