@@ -21,7 +21,9 @@ export class AuthService {
         console.log('>>>>>', mongo);
     }
 
-    signUp(createUserDto: CreateUserDto) {}
+    signUp(createUserDto: CreateUserDto): boolean {
+        return true;
+    }
     signIn(email: string, password: string) {}
 
     private async generateToken(data, options?: SignOptions): Promise<string> {
